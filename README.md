@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-zero-to-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zeroToLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zeroToLike = require( 'path/to/vendor/umd/array-zero-to-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zeroToLike;
-})();
-</script>
+var zeroToLike = require( '@stdlib/array-zero-to-like' );
 ```
 
 #### zeroToLike( x\[, dtype] )
@@ -134,15 +126,10 @@ var arr = zeroToLike( [ 0, 0, 0, 0, 0 ], 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var sort2hp = require( '@stdlib/blas-ext-base-gsort2hp' );
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var zeroToLike = require( '@stdlib/array-zero-to-like' );
 
 // Generate an array of random numbers:
 var opts = {
@@ -161,11 +148,6 @@ sort2hp( x.length, 1, tmp, 1, idx, 1 );
 
 console.log( x );
 console.log( idx );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -183,6 +165,18 @@ console.log( idx );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-empty-like`][@stdlib/array/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/array-full-like`][@stdlib/array/full-like]</span><span class="delimiter">: </span><span class="description">create a filled array having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/array-nans-like`][@stdlib/array/nans-like]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/array-one-to-like`][@stdlib/array/one-to-like]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by 1 starting from one and having the same length and data type as a provided input array.</span>
+-   <span class="package-name">[`@stdlib/array-ones-like`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/array-zero-to`][@stdlib/array/zero-to]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by 1 starting from zero.</span>
+-   <span class="package-name">[`@stdlib/array-zeros-like`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
 
 </section>
 
@@ -256,6 +250,24 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-zero-to-like/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-zero-to-like/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/empty-like]: https://github.com/stdlib-js/array-empty-like
+
+[@stdlib/array/full-like]: https://github.com/stdlib-js/array-full-like
+
+[@stdlib/array/nans-like]: https://github.com/stdlib-js/array-nans-like
+
+[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array-one-to-like
+
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like
+
+[@stdlib/array/zero-to]: https://github.com/stdlib-js/array-zero-to
+
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
+
+<!-- </related-links> -->
 
 </section>
 
