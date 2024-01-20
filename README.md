@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-zero-to-like
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var zeroToLike = require( '@stdlib/array-zero-to-like' );
+import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@esm/index.mjs';
 ```
 
 #### zeroToLike( x\[, dtype] )
@@ -126,10 +110,15 @@ var arr = zeroToLike( [ 0, 0, 0, 0, 0 ], 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var sort2hp = require( '@stdlib/blas-ext-base-gsort2hp' );
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var zeroToLike = require( '@stdlib/array-zero-to-like' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import sort2hp from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@esm/index.mjs';
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
+import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@esm/index.mjs';
 
 // Generate an array of random numbers:
 var opts = {
@@ -148,6 +137,10 @@ sort2hp( x.length, 1, tmp, 1, idx, 1 );
 
 console.log( x );
 console.log( idx );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -191,7 +184,7 @@ console.log( idx );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -253,19 +246,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/empty-like]: https://github.com/stdlib-js/array-empty-like
+[@stdlib/array/empty-like]: https://github.com/stdlib-js/array-empty-like/tree/esm
 
-[@stdlib/array/full-like]: https://github.com/stdlib-js/array-full-like
+[@stdlib/array/full-like]: https://github.com/stdlib-js/array-full-like/tree/esm
 
-[@stdlib/array/nans-like]: https://github.com/stdlib-js/array-nans-like
+[@stdlib/array/nans-like]: https://github.com/stdlib-js/array-nans-like/tree/esm
 
-[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array-one-to-like
+[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array-one-to-like/tree/esm
 
-[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like/tree/esm
 
-[@stdlib/array/zero-to]: https://github.com/stdlib-js/array-zero-to
+[@stdlib/array/zero-to]: https://github.com/stdlib-js/array-zero-to/tree/esm
 
-[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like/tree/esm
 
 <!-- </related-links> -->
 
