@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-zero-to-like",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generate a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length and data type as a provided input array.",
   "license": "Apache-2.0",
   "author": {
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-dtype": "^0.1.0",
-    "@stdlib/array-zero-to": "github:stdlib-js/array-zero-to#main",
+    "@stdlib/array-zero-to": "^0.1.0",
     "@stdlib/string-format": "^0.1.1",
     "@stdlib/types": "^0.2.0"
   },
