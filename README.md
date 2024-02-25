@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@deno/mod.js';
+import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@v0.2.1-deno/mod.js';
 ```
 
 #### zeroToLike( x\[, dtype] )
@@ -113,7 +113,7 @@ var arr = zeroToLike( [ 0, 0, 0, 0, 0 ], 'int32' );
 ```javascript
 import sort2hp from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@deno/mod.js';
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@deno/mod.js';
+import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@v0.2.1-deno/mod.js';
 
 // Generate an array of random numbers:
 var opts = {
