@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-zero-to-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@esm/index.mjs';
+var zeroToLike = require( '@stdlib/array-zero-to-like' );
 ```
 
 #### zeroToLike( x\[, dtype] )
@@ -110,15 +128,10 @@ var arr = zeroToLike( [ 0, 0, 0, 0, 0 ], 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import sort2hp from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@esm/index.mjs';
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import zeroToLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to-like@esm/index.mjs';
+```javascript
+var sort2hp = require( '@stdlib/blas-ext-base-gsort2hp' );
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var zeroToLike = require( '@stdlib/array-zero-to-like' );
 
 // Generate an array of random numbers:
 var opts = {
@@ -137,10 +150,6 @@ sort2hp( x.length, 1, tmp, 1, idx, 1 );
 
 console.log( x );
 console.log( idx );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -184,7 +193,7 @@ console.log( idx );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -214,8 +223,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-zero-to-like.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-zero-to-like
 
-[test-image]: https://github.com/stdlib-js/array-zero-to-like/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/array-zero-to-like/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/array-zero-to-like/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/array-zero-to-like/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-zero-to-like/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-zero-to-like?branch=main
@@ -249,19 +258,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/empty-like]: https://github.com/stdlib-js/array-empty-like/tree/esm
+[@stdlib/array/empty-like]: https://github.com/stdlib-js/array-empty-like
 
-[@stdlib/array/full-like]: https://github.com/stdlib-js/array-full-like/tree/esm
+[@stdlib/array/full-like]: https://github.com/stdlib-js/array-full-like
 
-[@stdlib/array/nans-like]: https://github.com/stdlib-js/array-nans-like/tree/esm
+[@stdlib/array/nans-like]: https://github.com/stdlib-js/array-nans-like
 
-[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array-one-to-like/tree/esm
+[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array-one-to-like
 
-[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like/tree/esm
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like
 
-[@stdlib/array/zero-to]: https://github.com/stdlib-js/array-zero-to/tree/esm
+[@stdlib/array/zero-to]: https://github.com/stdlib-js/array-zero-to
 
-[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like/tree/esm
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
 
 <!-- </related-links> -->
 
