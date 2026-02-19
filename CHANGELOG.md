@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-19)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`bad91bf`](https://github.com/stdlib-js/stdlib/commit/bad91bf9fad4693af649750fd4ebe30640358e48) - **bench:** refactor to use string interpolation in `array/zero-to-like` [(#10350)](https://github.com/stdlib-js/stdlib/pull/10350) _(by Shubham)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Shubham
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
