@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-02)
+## Unreleased (2026-03-30)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`bfc9322`](https://github.com/stdlib-js/stdlib/commit/bfc9322020792df4f47ea649d6fbed509284f6bd) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
 -   [`bad91bf`](https://github.com/stdlib-js/stdlib/commit/bad91bf9fad4693af649750fd4ebe30640358e48) - **bench:** refactor to use string interpolation in `array/zero-to-like` [(#10350)](https://github.com/stdlib-js/stdlib/pull/10350) _(by Shubham)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Shubham
 
 </section>
