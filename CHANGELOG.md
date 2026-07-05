@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-29)
+## Unreleased (2026-07-05)
+
+<section class="features">
+
+### Features
+
+-   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - **feat:** add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055) _(by Gururaj Gurram, Athan Reines)_
 -   [`dbe4c82`](https://github.com/stdlib-js/stdlib/commit/dbe4c820ea98330253b4054a5bc9b04b2293415b) - **docs:** propagate fixes to sibling packages [(#12677)](https://github.com/stdlib-js/stdlib/pull/12677) _(by Philipp Burckhardt, Athan Reines)_
 -   [`bfc9322`](https://github.com/stdlib-js/stdlib/commit/bfc9322020792df4f47ea649d6fbed509284f6bd) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
 -   [`bad91bf`](https://github.com/stdlib-js/stdlib/commit/bad91bf9fad4693af649750fd4ebe30640358e48) - **bench:** refactor to use string interpolation in `array/zero-to-like` [(#10350)](https://github.com/stdlib-js/stdlib/pull/10350) _(by Shubham)_
@@ -26,9 +37,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Philipp Burckhardt
 -   Shubham
 
